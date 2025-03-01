@@ -1,0 +1,264 @@
+﻿html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    color: #222222;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 250px;
+    background-color: #ffedd5;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    flex: 1;
+}
+
+h3 {
+    margin-left: 25px;
+}
+
+h2 {
+    margin-left: 25px;
+}
+
+header {
+    margin-top:-25px;
+    display: flex;
+    flex-direction: column; /* Postavlja sve u vertikalnu liniju */
+    align-items: flex-start; /* Poravnava sve elemente na lijevu stranu */
+    padding: 20px;
+    background-color: #F68121; /* Pozadinska boja headera */
+}
+
+.header-left {
+    display: flex;
+    align-items: center; /* Poravnava logo i naslov u liniji */
+    margin-bottom: 10px; /* Razmak između naslova i navigacije */
+}
+
+header .logo {
+    max-height: 100px; /* Postavite visinu loga prema potrebama */
+    width: auto; /* Očuvanje proporcija slike */
+    margin-right: 25px; /* Razmak između loga i naslova */
+    margin-bottom:15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 64px;
+    color: white;
+}
+
+nav a {
+    color: white;
+    margin-right: 15px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+footer {
+    background-color: #F68121;
+    color: white;
+    text-align: center;
+    padding: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+form {
+    margin: 20px 0;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+    table th, table td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: left;
+    }
+
+    table th {
+        background-color: #f9ddb7;
+    }
+
+.custom-textbox {
+    background-color: #f9ddb7;
+    padding: 5px 10px;
+    color: #222222;
+    font-size: 16px;
+}
+
+    .custom-textbox:focus {
+        border-color: #F58634;
+        outline: none;
+    }
+
+.custom-fieldset {
+    border: 2px solid #ccc; /* Sivi okvir oko fieldset-a */
+    padding: 20px; /* Unutarnje margine */
+    border-radius: 8px; /* Zaobljeni kutovi */
+    background-color: #ffedd5; /* Svijetla pozadina */
+    margin-bottom: 20px; /* Razmak ispod fieldset-a */
+}
+
+.custom-legend {
+    font-size: 18px; /* Veći font za legendu */
+    font-weight: bold; /* Podebljan tekst */
+}
+
+.custom-label {
+    display: block; /* Labela zauzima cijeli red */
+    margin-bottom: 5px; /* Razmak ispod labela */
+    font-size: 14px; /* Manji font */
+}
+
+.custom-input {
+    width: 250px; 
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+    .custom-input:focus {
+        border-color: #F58634;
+        outline: none;
+    }
+
+.custom-button {
+    background-color: #F58634;
+    color: white;
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 14px; 
+    cursor: pointer;
+}
+
+    .custom-button:hover {
+        background-color: #FF530A;
+    }
+
+
+
+fieldset.custom-fieldset-posudbe {
+    border: 2px solid #ccc;
+    padding: 15px; /* Smanjen padding */
+    border-radius: 8px;
+    background-color: #ffedd5;
+    margin-bottom: 20px;
+}
+
+.custom-label-posudbe {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dve kolone */
+    gap: 50px; /* Povećan razmak između kolona */
+    margin-bottom: 15px;
+    margin-right: 50px;
+}
+
+    .form-row label,
+    .form-row input {
+        width: 100%; /* Svi elementi zauzimaju 100% širine unutar kolona */
+    }
+
+    .form-row input {
+        padding: 8px;
+        font-size: 14px;
+        background-color: #FFEDD5;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+
+.custom-button-posudbe {
+    background-color: #F58634;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+    .custom-button-posudbe:hover {
+        background-color: #FF530A;
+    }
+
+
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Raspoređuje elemente na vertikalnoj osi */
+    height: 300px; /* Podesite visinu forme prema potrebama */
+}
+
+    .login-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .login-container label {
+        display: block;
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+.custom-input-login {
+    width: 375px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+/* Stilizacija Delete dugmeta */
+.gridview-delete-button {
+    background-color: red; /* Pozadina crvena */
+    color: white; /* Tekst bijeli */
+    border: none; /* Bez obruba */
+    padding: 5px 10px; /* Unutrašnji razmak */
+    font-size: 14px; /* Veličina fonta */
+    cursor: pointer; /* Kursor kao ruka */
+    border-radius: 5px; /* Zaobljeni kutovi */
+    transition: background-color 0.3s; /* Efekat prelaza na pozadini */
+}
+
+    .gridview-delete-button:hover {
+        background-color: darkred; /* Tamnija crvena pri hoveru */
+    }

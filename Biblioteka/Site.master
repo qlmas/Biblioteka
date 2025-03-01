@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="Site" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Biblioteka</title>
+    <link rel="stylesheet" href="Styles/site.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <div class="header-left">
+                <img src="Images/logo.jpg" alt="Logo" class="logo" />
+                <h1>Biblioteka</h1>
+            </div>
+            <% if (Session["Username"] != null) { %>
+                <nav>
+                    <asp:HyperLink ID="lnkBooks" runat="server" NavigateUrl="Books.aspx">Knjige</asp:HyperLink>
+                    <asp:HyperLink ID="lnkUsers" runat="server" NavigateUrl="Users.aspx">Članovi</asp:HyperLink>
+                    <asp:HyperLink ID="lnkLoans" runat="server" NavigateUrl="Loans.aspx">Posudbe</asp:HyperLink>
+                    <asp:HyperLink ID="lnkLogout" runat="server" NavigateUrl="Logout.aspx">Odjava</asp:HyperLink>
+                </nav>
+            <% } %>
+        </header>
+    <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+    </form>
+        <footer>
+            <p>&copy; 2025 Biblioteka, Almas Muratović & Edina Zubčević</p>
+        </footer>
+</body>
+</html>
+
